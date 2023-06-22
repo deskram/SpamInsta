@@ -5,6 +5,8 @@ A tool for sending messages repeatedly on Instagram
 
 # Installation 🛠️
 # command:
+    git clone https://github.com/deskram/SpamInsta.git
+    cd SpamInsta
     pip install virtualenv
     python3 -m venv venv
     * On Windows Powershell*: .\venv\Scripts\activate.ps1

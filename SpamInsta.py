@@ -60,16 +60,16 @@ class InstagramSpammer:
             self.mid = self.coo["mid"]
             self.sid = self.coo["sessionid"]
             self.headers.update({'Cookie': f'mid={self.mid}; sessionid={self.sid}; ds_user_id={self.ds_user_id}; csrftoken={self.csrf}'})
-        elif "The username you entered doesn't appear to belong to an account" in log.json():
+        elif "The username you entered doesn't appear to belong to an account" in log.text:
             print(Fore.RED + f"[-] Username is wrong : @{self.username}")
             exit()
-        elif "The password you entered is incorrect. Please try again." in log.json():
+        elif "The password you entered is incorrect. Please try again." in log.text:
             print(Fore.RED + f'[-] Password is wrong : @{self.username}')
             exit()
-        elif "challenge_required" in log.json():
+        elif "challenge_required" in log.text:
             print(Fore.RED + f'[-] Secure required : @{self.username}')
             exit()
-        elif '"two_factor_required":true' in log.json():
+        elif '"two_factor_required":true' in log.text:
             print(Fore.RED + f"[-] Two factor required : @{self.username}")
             exit()
         elif 'missing_parameters' in log.text:
@@ -107,7 +107,7 @@ class InstagramSpammer:
                 '_uuid': f'{self.uuid}',
                 'offline_threading_id': f'{iddict}'
             }
-            
+
             req = requests.post(url_send, data=data_send, headers=self.headers)
             
             if '"status":"ok"' in req.text:

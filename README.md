@@ -1,7 +1,7 @@
 #                         SpamInsta
-![PY DEV DeskRam ][https://t.me/deskram]
+PY DEV DeskRam «Ali» https://t.me/deskram
 
-A tool for sending messages repeatedly on Instagram
+A tool for sending spam messages to any public account on Instagram
 
 # Installation 🛠️
 # command:
@@ -16,3 +16,5 @@ A tool for sending messages repeatedly on Instagram
     * On Windows Powershell*: py SpamInsta.py
     * On Linux and Git Bash*: python3 SpamInsta.py
 
+### 📢 Warning 
+*This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.*

@@ -1,4 +1,5 @@
 #                         SpamInsta
+![PY DEV DeskRam ](https://t.me/deskram)
 
 A tool for sending messages repeatedly on Instagram
 

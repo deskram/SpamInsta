@@ -13,6 +13,6 @@ A tool for sending messages repeatedly on Instagram
     * On Windows Powershell*: .\venv\Scripts\activate.ps1
     * On Linux and Git Bash*: source venv/bin/activate
     pip install -r requirements.txt
-    *On Windows Powershell*: py SpamInsta.py
+    * On Windows Powershell*: py SpamInsta.py
     * On Linux and Git Bash*: python3 SpamInsta.py
 
